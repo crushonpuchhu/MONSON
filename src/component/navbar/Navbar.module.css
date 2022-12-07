@@ -1,66 +1,108 @@
-.main
-{   position: relative;
-  
-    background-color:#30D5C8;
-    height:10vh;
+.main {
+    position: relative;
+    background-color: #30D5C8;
+    height: 10vh;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    
-}
-.div1
-{ position: relative;
-  height: 100%;
-  width: 20%;
-  display: flex;
-  align-items: center;
-}
-.div2
-{ position: relative;
-  height: 100%;
-  width: 80%;
-  display: flex;
-  justify-content:end;
-  align-items: center;
-  background-color: red;
 
 }
-.img
-{
+
+.dark {
+    position: relative;
+    background-color: #202323;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;  
+}
+
+.div1 {
+    position: relative;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.div2 {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.img {
     position: relative;
     height: 45px;
     margin-left: 20%;
 }
-.h1
-{
-    
+
+.h1 {
+
     margin-left: 7%;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     letter-spacing: 1px;
     font-weight: 50;
+    
 }
-.ser1,.ser2
-{
+
+.ser1,
+.ser2 {
     border-radius: 5px;
     box-sizing: border-box;
     cursor: pointer;
 }
-.ser1
-{
-    background-color: rgba(134, 129, 129, 0.653); 
+
+.ser1 {
+    background-color: rgba(134, 129, 129, 0.653);
     padding: 10px;
     color: white;
+    margin-left: 5%;
 }
-.ser2
-{
-    background-color:rgba(134, 129, 129, 0.653); 
+
+.ser2 {
+    background-color: rgba(134, 129, 129, 0.653);
     padding: 10px;
     color: rgb(255, 255, 255);
     margin-left: 5%;
     margin-right: 5%;
+
+}
+
+.day {
+
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.night {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.sun {
+    height: 80%;
     
 }
-.app2
-{
-    background-color: red;
+
+.h12 {
+
+    letter-spacing: 5px;
+}
+
+.tepm {
+
+    font-size: 55px;
 }
