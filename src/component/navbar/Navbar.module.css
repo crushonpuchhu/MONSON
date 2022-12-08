@@ -38,8 +38,16 @@
 
 .img {
     position: relative;
-    height: 45px;
+    height: 80%;
+    width: 20%;
+    border-radius: 20px;
+   background-color: red;
     margin-left: 20%;
+    background-image: url("https://i.pinimg.com/originals/c9/8c/1e/c98c1eae5bdebd49e3b617ad31cbf198.gif");
+    background-size:100px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    
 }
 
 .h1 {
@@ -94,7 +102,7 @@
 
 .sun {
     height: 80%;
-    
+   
 }
 
 .h12 {

@@ -19,6 +19,7 @@
 {
   position: relative;
     font-size: 70px;
+    color: rgb(255, 111, 0);
 }
 .iconediv
 {
@@ -38,5 +39,10 @@
    position: relative;   
     font-size: 25px;
 }
-
+.cold
+{
+    color: rgb(135, 238, 238);
+    position: relative;
+    font-size: 70px;
+}
 

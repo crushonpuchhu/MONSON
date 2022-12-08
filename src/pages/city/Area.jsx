@@ -2,6 +2,7 @@ import React from 'react'
 import css from './City.module.css'
 import Show from '../display/Show'
 import { useState } from 'react'
+
 const Area = () => {
   const [city, setcity] = useState("");
   const [setdata, setplace] = useState("");
@@ -30,7 +31,7 @@ const Area = () => {
 
         <div className={css.seca}>
         
-         { setdata!==""? <Show city={setdata}/>:"Type city name first"}
+         {setdata!==""? <Show city={setdata}/>:<div className={css.image}></div>}
           
          
         </div>

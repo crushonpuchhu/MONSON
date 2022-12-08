@@ -47,8 +47,8 @@ const Navbar = () => {
         <>
             <div className={day ? css.main : css.dark}>
                 <div className={css.div1}>
-                    <img className={css.img} src={require('./hsun.png')} alt="" />
-
+                  
+                     <div className={css.img}></div>
                 </div>
                 <div className={css.div2}>
                     <div className={day ? css.day : css.night}>
