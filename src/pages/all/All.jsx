@@ -5,7 +5,7 @@ const All = () => {
 
 
   return (
-    <div>All
+    <div>
 
 
     </div>
