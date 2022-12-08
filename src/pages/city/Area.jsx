@@ -9,7 +9,7 @@ const Area = () => {
   function func() {
     setplace(city);
     setcity("");
-   
+
   }
 
   return (
@@ -30,10 +30,10 @@ const Area = () => {
         <div className={css.cr2}></div>
 
         <div className={css.seca}>
-        
-         {setdata!==""? <Show city={setdata}/>:<div className={css.image}></div>}
-          
-         
+
+          {setdata !== "" ? <Show city={setdata} /> : <div className={css.image}></div>}
+
+
         </div>
 
       </div>
