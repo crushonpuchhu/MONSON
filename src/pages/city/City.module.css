@@ -54,6 +54,9 @@
     width: 60%;
     border-radius: 10px;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cr1,.cr2
 {   position: absolute;
@@ -72,4 +75,12 @@
     margin-left: 40%;
     margin-top: 15%;
    
+}
+.btn
+{
+    background-color:#A020F0;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 10px;
+
 }

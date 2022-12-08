@@ -1,0 +1,42 @@
+.main
+{
+  
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.first,.second,.third,.fouth
+{
+   height: 25%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.h1
+{
+  position: relative;
+    font-size: 70px;
+}
+.iconediv
+{
+  position: relative;
+  font-size: 80px;
+}
+
+
+.h12
+{
+    position: relative;
+    font-size: 40px;
+    
+}
+.h13
+{
+   position: relative;   
+    font-size: 25px;
+}
+
+

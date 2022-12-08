@@ -3,6 +3,7 @@ import { useState } from "react";
 import css from '../navbar/Navbar.module.css'
 import { useNavigate } from "react-router-dom";
 
+
 const Navbar = () => {
     const search_by_city = useNavigate();
     const search_by_All=useNavigate();
@@ -26,7 +27,7 @@ const Navbar = () => {
     }
 
 
-
+    
 
     const webu = fetch("https://api.weatherapi.com/v1/current.json?key=6cd72e19397d429da6892536220712&q=" + lat + "," + lon + "&aqi=no&units=metric");
     async function weat() {
