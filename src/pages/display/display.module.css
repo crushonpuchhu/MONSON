@@ -6,20 +6,28 @@
     display: flex;
     flex-direction: column;
 }
-.first,.second,.third,.fouth
-{
-   height: 25%;
+.first,.second,.third,.fouth,.name
+{  
+   height: 20%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     box-sizing: border-box;
+    
 }
+.h1name
+{    position: relative;
+    font-size: 70px;
+    color: #A020F0;
+   
+}
+
 .h1
 {
   position: relative;
     font-size: 70px;
-    color: rgb(255, 111, 0);
+    color: rgb(241, 145, 71);
 }
 .iconediv
 {
@@ -42,6 +50,12 @@
 .cold
 {
     color: rgb(135, 238, 238);
+    position: relative;
+    font-size: 70px;
+}
+.hot
+{
+    color: rgb(247, 8, 8);
     position: relative;
     font-size: 70px;
 }

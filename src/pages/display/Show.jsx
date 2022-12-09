@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import css from './display.module.css';
+import axios from "axios";
 
 const Show = ({city}) => {
   const [temp,set_temp]=useState(0);
@@ -9,16 +10,16 @@ const Show = ({city}) => {
   const [days,set_days]=useState(0);
 
  
-    const weu = fetch("https://api.weatherapi.com/v1/current.json?key=6cd72e19397d429da6892536220712&q="+city+"&aqi=no&units=metric");
+    const weu = axios("https://api.weatherapi.com/v1/current.json?key=6cd72e19397d429da6892536220712&q="+city+"&aqi=no&units=metric");
     async function we() {
 
         try {
-          const first = await weu;
-          const datae = await first.json();
-          set_temp(datae.current.temp_c);
-          set_humidity(datae.current.humidity);
-          set_direction(datae.current.wind_dir);
-          set_days(datae.current.is_day);
+          
+          const datae = await weu;
+          set_temp(datae.data.current.temp_c);
+          set_humidity(datae.data.current.humidity);
+          set_direction(datae.data.current.wind_dir);
+          set_days(datae.data.current.is_day);
         } 
         catch (error) {
 
@@ -34,14 +35,14 @@ const Show = ({city}) => {
 
   return (
     <div className={css.main}>
-    
+     <div className={css.name}><h1 className={css.h1name}>{city.toUpperCase()}</h1></div>
     <div className={css.first}>
-      <h1 className={temp>25?css.h1:css.cold}>{temp}°</h1>
+      <h1 className={temp>25?(temp>30?css.hot:css.h1):css.cold}>{temp}°</h1>
      <div className={css.iconediv}><i  className="fa-solid fa-temperature-three-quarters"></i></div>
     </div>
     <div className={css.second}>
-      <h2 className={css.h12}>{humidity}</h2>
-      <h3 className={css.h13}>humidity</h3>
+      <h2 className={css.h12}>{humidity}%</h2>
+      <h3 className={css.h13}>Humidity</h3>
     </div>
     <div className={css.third}>
     <h2 className={css.h12}>{dirction}</h2>
@@ -56,5 +57,4 @@ const Show = ({city}) => {
     </div>
   )
 }
-
 export default Show

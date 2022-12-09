@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import css from '../navbar/Navbar.module.css'
 import { useNavigate } from "react-router-dom";
-
+import axios from "axios";
 
 const Navbar = () => {
     const search_by_city = useNavigate();
@@ -29,14 +29,14 @@ const Navbar = () => {
 
     
 
-    const webu = fetch("https://api.weatherapi.com/v1/current.json?key=6cd72e19397d429da6892536220712&q=" + lat + "," + lon + "&aqi=no&units=metric");
+    const webu = axios("https://api.weatherapi.com/v1/current.json?key=6cd72e19397d429da6892536220712&q=" + lat + "," + lon + "&aqi=no&units=metric");
     async function weat() {
-        const first = await webu;
-        const datare = await first.json();
-        setlocation(datare.location.name);
-        settemp(datare.current.temp_c)
-        setday(datare.current.is_day)
-        console.log(datare)
+        
+        const datare = await webu;
+        setlocation(datare.data.location.name);
+        settemp(datare.data.current.temp_c)
+        setday(datare.data.current.is_day)
+       
 
     }
     weat();
