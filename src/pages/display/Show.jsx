@@ -8,8 +8,8 @@ const Show = ({city}) => {
   const [humidity,set_humidity]=useState(0);
   const [dirction,set_direction]=useState("");
   const [days,set_days]=useState(0);
+  const [place,setplace]=useState("");
 
- 
     const weu = axios("https://api.weatherapi.com/v1/current.json?key=00547835b5e84313945140812220912&q="+city+"&aqi=no&units=metric");
     async function we() {
 
@@ -20,10 +20,13 @@ const Show = ({city}) => {
           set_humidity(datae.data.current.humidity);
           set_direction(datae.data.current.wind_dir);
           set_days(datae.data.current.is_day);
+          setplace(datae.data.location.name); 
+           
         } 
         catch (error) {
 
            console.log(error)
+
         }
        
         
@@ -35,7 +38,7 @@ const Show = ({city}) => {
 
   return (
     <div className={css.main}>
-     <div className={css.name}><h1 className={css.h1name}>{city.toUpperCase()}</h1></div>
+     <div className={css.name}><h1 className={css.h1name}>{place!==""?place.toUpperCase():"Not found!"}</h1></div>
     <div className={css.first}>
       <h1 className={temp>25?(temp>30?css.hot:css.h1):css.cold}>{temp}°</h1>
      <div className={css.iconediv}><i  className="fa-solid fa-temperature-three-quarters"></i></div>

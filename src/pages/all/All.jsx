@@ -1,14 +1,9 @@
 import React from 'react'
 import css from './All.module.css';
-
 const All = () => {
-
-
   return (
-    <div>
-
-
-    </div>
+    <div className={css.main}>All</div>
   )
 }
+
 export default All

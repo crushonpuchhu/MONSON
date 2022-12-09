@@ -6,11 +6,12 @@
     align-items: center;
     box-sizing: border-box;
 
+
 }
 
 .dark {
     position: relative;
-    background-color: #202323;
+    background-image:linear-gradient(black , rgb(34, 34, 114));
     height: 10vh;
     display: flex;
     align-items: center;

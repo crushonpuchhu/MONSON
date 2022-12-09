@@ -12,7 +12,7 @@ const Navbar = () => {
     const [location, setlocation] = useState("");
     const [tempt, settemp] = useState(0);
     const [day, setday] = useState(1);
-
+   
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((data) => {
             setlat(data.coords.latitude);
@@ -31,11 +31,11 @@ const Navbar = () => {
 
     const webu = axios("https://api.weatherapi.com/v1/current.json?key=00547835b5e84313945140812220912&q=" + lat + "," + lon + "&aqi=no&units=metric");
     async function weat() {
-        
         const datare = await webu;
         setlocation(datare.data.location.name);
         settemp(datare.data.current.temp_c)
         setday(datare.data.current.is_day)
+            
        
 
     }
