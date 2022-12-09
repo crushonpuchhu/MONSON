@@ -29,7 +29,7 @@ const Navbar = () => {
 
     
 
-    const webu = axios("https://api.weatherapi.com/v1/current.json?key=6cd72e19397d429da6892536220712&q=" + lat + "," + lon + "&aqi=no&units=metric");
+    const webu = axios("https://api.weatherapi.com/v1/current.json?key=00547835b5e84313945140812220912&q=" + lat + "," + lon + "&aqi=no&units=metric");
     async function weat() {
         
         const datare = await webu;
