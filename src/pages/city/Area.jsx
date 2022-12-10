@@ -13,7 +13,7 @@ const Area = () => {
   
 
   }
-  const day = axios("https://api.weatherapi.com/v1/current.json?key=00547835b5e84313945140812220912&q="+setdata+"&aqi=no&units=metric");
+  const day = axios("ttps://api.weatherapi.com/v1/current.json?key=00547835b5e84313945140812220912&q="+setdata+"&aqi=no&units=metric");
     async function weo() {
 
         try {

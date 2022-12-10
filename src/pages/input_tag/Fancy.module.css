@@ -1,0 +1,47 @@
+
+.lab
+{
+  position:absolute;
+  width: 70px;
+  text-align: center;
+  border-radius: 5px;
+  color: aliceblue;
+  margin-right: 10%; 
+  transition-duration: 0.4s;
+  letter-spacing: 5px;
+}
+.lab1
+{
+    position:absolute;
+  background-color: #A020F0;
+  width: 70px;
+  text-align: center;
+  border-radius: 5px;
+  color: aliceblue;
+    z-index: 2;
+     margin-bottom: 3.5%;
+     margin-left:-10%;
+     transition-duration: 0.4s;
+}
+
+.input_city
+{ position: relative;
+  box-sizing: border-box;
+  width: 80%;
+  height: 45%;
+  border-radius: 5px;
+  font-size: 25px;
+  border: 2px solid rgb(86, 84, 84);
+  background-color: transparent;
+  outline: none;
+  color:#A020F0;
+  padding: 10px;
+  background-color: rgba(97, 95, 95, 0.412);
+}
+.input_city:focus
+{  
+    position:relative;
+    border:2px solid #A020F0;
+   
+    
+}

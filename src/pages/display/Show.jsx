@@ -10,7 +10,7 @@ const Show = ({city}) => {
   const [days,set_days]=useState(0);
   const [place,setplace]=useState("");
 
-    const weu = axios("https://api.weatherapi.com/v1/current.json?key=00547835b5e84313945140812220912&q="+city+"&aqi=no&units=metric");
+    const weu = axios("ttps://api.weatherapi.com/v1/current.json?key=00547835b5e84313945140812220912&q="+city+"&aqi=no&units=metric");
     async function we() {
 
         try {

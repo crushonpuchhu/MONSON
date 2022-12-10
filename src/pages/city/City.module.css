@@ -26,7 +26,7 @@
 .defaltu
 {
     color: white;
-    background-color: rgb(61, 60, 60);
+    background-color:rgb(35, 34, 34);
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -89,9 +89,10 @@
     height:30%;
     width: 15%;
     border-radius: 50%;
-    background-color: #30D5C8;
     margin-left: 40%;
     margin-top: 15%;
+    background-image: url("");
+    background-size: cover;
 }
 .btn
 {
