@@ -1,6 +1,6 @@
 import React from 'react'
 import css from './City.module.css'
-import Show from '../display/Show'
+import { Sho} from '../display/Show'
 import { useState } from 'react'
 import axios from 'axios'
 const Area = () => {
@@ -10,10 +10,10 @@ const Area = () => {
   function func() {
     setplace(city);
     setcity("");
-  
+    
 
   }
-  const day = axios("ttps://api.weatherapi.com/v1/current.json?key=00547835b5e84313945140812220912&q="+setdata+"&aqi=no&units=metric");
+  const day = axios("https://api.weatherapi.com/v1/current.json?key=00547835b5e84313945140812220912&q="+setdata+"&aqi=no&units=metric");
     async function weo() {
 
         try {
@@ -21,7 +21,7 @@ const Area = () => {
           const dat = await day;
           setd(dat.data.current.is_day);
           
-           
+           console.log(dat); 
         } 
         catch (error) {
 
@@ -32,8 +32,8 @@ const Area = () => {
         
 
     }
+    weo();
     
-      weo();
 
 
   return (
@@ -55,7 +55,7 @@ const Area = () => {
 
         <div className={css.seca}>
 
-          {setdata !== "" ? <Show city={setdata} /> : <div className={css.image}></div>}
+          {setdata !== "" ? <Sho cit={setdata} /> : <div className={css.image}></div>}
 
 
         </div>
