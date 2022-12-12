@@ -1,6 +1,6 @@
 .main {
     position: relative;
-    background-color: rgb(35, 34, 34);
+    background-color: rgb(31, 31, 31);
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -55,15 +55,15 @@
     align-items: center;
     justify-content: center;
 
-
+   
 }
 
 .btn {
-    background-color: #A020F0;
+    background-color:#A020F0;
     padding: 10px 30px;
     border-radius: 20px;
     box-sizing: border-box;
-    color: white;
+    color:rgb(255, 255, 255);
     cursor: pointer;
 }
 .image
@@ -75,4 +75,47 @@
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+@media(max-width:1000px)
+{
+  .btn
+  {
+    padding: 7px 15px;
+  }
+  .main {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr ;
+}
+.seco
+{
+    height: 90%;
+    width: 60%;    
+}
+
+.fome {
+    
+     height: 80%;
+     width: 80%;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+ 
+ 
+ }
+ .f1 {
+    
+    height: 22%;
+    width: 50%;
+    
+}
+
+.image
+{
+    height: 150px;
+    width: 150px;
+}
 }

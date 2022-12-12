@@ -50,8 +50,7 @@ const Area = () => {
 
       <div className={css.second}>
 
-        
-        <div className={css.cr2}></div>
+      
 
         <div className={css.seca}>
 

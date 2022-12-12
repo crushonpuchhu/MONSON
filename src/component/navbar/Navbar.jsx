@@ -6,13 +6,13 @@ import axios from "axios";
 
 const Navbar = () => {
     const search_by_city = useNavigate();
-    const search_by_All=useNavigate();
+    const search_by_All = useNavigate();
     const [lat, setlat] = useState(0);
     const [lon, setlon] = useState(0);
     const [location, setlocation] = useState("");
     const [tempt, settemp] = useState(0);
     const [day, setday] = useState(1);
-   
+
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((data) => {
             setlat(data.coords.latitude);
@@ -27,7 +27,7 @@ const Navbar = () => {
     }
 
 
-    
+
 
     const webu = axios("https://api.weatherapi.com/v1/current.json?key=00547835b5e84313945140812220912&q=" + lat + "," + lon + "&aqi=no&units=metric");
     async function weat() {
@@ -35,8 +35,8 @@ const Navbar = () => {
         setlocation(datare.data.location.name);
         settemp(datare.data.current.temp_c)
         setday(datare.data.current.is_day)
-            
-       
+
+
 
     }
     weat();
@@ -47,8 +47,8 @@ const Navbar = () => {
         <>
             <div className={day ? css.main : css.dark}>
                 <div className={css.div1}>
-                  
-                     <div className={css.img}></div>
+
+                    <div className={css.img}></div>
                 </div>
                 <div className={css.div2}>
                     <div className={day ? css.day : css.night}>
@@ -57,13 +57,23 @@ const Navbar = () => {
                         {day ? <img className={css.sun} src={require('./sun.png')} alt="sun_day" /> : <img className={css.sun} src={require('./moon.png')} alt="sun_day" />}
                     </div>
 
-                    <div onClick={()=>search_by_city("/search_by_city")} className={css.ser1}>
+                    <div className={css.co}>
 
-                        Serach by city
+                        <div onClick={() => search_by_city("/search_by_city")} className={css.ser1}>
+
+                            Serach by city
+                        </div>
+                        <div onClick={() => search_by_All("/search_by_All")} className={css.ser2}>
+                            Serach by All
+                        </div>
+
+
+
+
+
                     </div>
-                    <div onClick={()=>search_by_All("/search_by_All")} className={css.ser2}>
-                        Serach by All
-                    </div>
+
+
                 </div>
             </div>
         </>

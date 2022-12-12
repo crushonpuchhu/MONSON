@@ -101,7 +101,7 @@ const Show = ({city,s,c}) => {
 
 
   return (
-    <div className={css.main}>
+    <div className={days?css.day:css.night}>
      <div className={css.name}><h1 className={css.h1name}>{place!==""?place.toUpperCase():"Not found!"}</h1></div>
     <div className={css.first}>
       <h1 className={temp>25?(temp>30?css.hot:css.h1):css.cold}>{temp}°</h1>

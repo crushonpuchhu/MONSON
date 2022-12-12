@@ -17,6 +17,10 @@ const Fancy_input = ({val,fun,up}) => {
            {
             settogell(!togel);
            } 
+           if(up=="")
+           {
+            settogell(!togel);
+           }
           
         
         
@@ -28,7 +32,7 @@ const Fancy_input = ({val,fun,up}) => {
   return (
     <>
    
-        <label className={togel? style.lab1:style.lab} htmlFor="text">{val}</label>
+        <label className={togel?style.lab1:style.lab} htmlFor="text">{val}</label>
         <input value={up} onFocus={clk} onBlur={clk} onChange={fun} className={style.input_city} type="text"  />
        
     </>
