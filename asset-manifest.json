@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/MONSON/static/css/main.efeafd6f.css",
+    "main.js": "/MONSON/static/js/main.60e08079.js",
+    "static/js/787.6e083ada.chunk.js": "/MONSON/static/js/787.6e083ada.chunk.js",
+    "static/media/moon.png": "/MONSON/static/media/moon.ef75cddd9dd6c08f96c7.png",
+    "index.html": "/MONSON/index.html",
+    "main.efeafd6f.css.map": "/MONSON/static/css/main.efeafd6f.css.map",
+    "main.60e08079.js.map": "/MONSON/static/js/main.60e08079.js.map",
+    "787.6e083ada.chunk.js.map": "/MONSON/static/js/787.6e083ada.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efeafd6f.css",
+    "static/js/main.60e08079.js"
+  ]
+}
